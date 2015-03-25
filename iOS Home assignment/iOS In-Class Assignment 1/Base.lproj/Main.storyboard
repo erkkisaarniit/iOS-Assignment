@@ -42,12 +42,77 @@
                     <connections>
                         <outlet property="Password" destination="bRa-Ki-TBt" id="rGF-on-dXL"/>
                         <outlet property="username" destination="IKe-aa-1BB" id="jeN-9a-TgY"/>
-                        <segue destination="Jt7-Ea-3Ra" kind="show" identifier="GoingToDa2ndScreen" id="FdW-Wb-jFd"/>
+                        <segue destination="V4F-XB-Uyy" kind="show" identifier="GoingToDa2ndScreen" id="HyK-sN-37N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8" y="289"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="drW-do-aDe">
+            <objects>
+                <navigationController id="V4F-XB-Uyy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wo1-7v-F8K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="edZ-NJ-dxd" kind="relationship" relationship="rootViewController" id="NWj-to-zoa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wsP-ab-57q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-488" y="1046"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="wf7-e5-1Zc">
+            <objects>
+                <viewController id="edZ-NJ-dxd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ba2-Pe-yWt"/>
+                        <viewControllerLayoutGuide type="bottom" id="kVy-Yj-E3q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H13-AH-QAO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuR-y2-TV8">
+                                <rect key="frame" x="37" y="170" width="146" height="30"/>
+                                <state key="normal" title="Static content screen">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auw-UM-Zbd">
+                                <rect key="frame" x="37" y="221" width="166" height="30"/>
+                                <state key="normal" title="Dynamic content screen">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You can choose between two screens:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jB0-1j-eJm">
+                                <rect key="frame" x="37" y="117" width="338" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="G6b-43-GdP">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="NBa-na-pLd">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0V0-Pv-VYJ">
+                                <rect key="frame" x="-23" y="-15" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log out">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lj6-Hn-yll" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="163" y="1046"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="T0f-tb-EMY">
