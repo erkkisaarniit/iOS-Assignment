@@ -68,7 +68,7 @@
         <!--Root View Controller-->
         <scene sceneID="wf7-e5-1Zc">
             <objects>
-                <viewController id="edZ-NJ-dxd" sceneMemberID="viewController">
+                <viewController id="edZ-NJ-dxd" customClass="ChoosingTypeController" customModule="iOS_In_Class_Assignment_1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ba2-Pe-yWt"/>
                         <viewControllerLayoutGuide type="bottom" id="kVy-Yj-E3q"/>
@@ -77,11 +77,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You can choose between two screens:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jB0-1j-eJm">
+                                <rect key="frame" x="37" y="117" width="338" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuR-y2-TV8">
                                 <rect key="frame" x="37" y="170" width="146" height="30"/>
                                 <state key="normal" title="Static content screen">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Jt7-Ea-3Ra" kind="show" identifier="Go2SecondScreen_Dynamic" id="eSO-3M-V8d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auw-UM-Zbd">
                                 <rect key="frame" x="37" y="221" width="166" height="30"/>
@@ -89,12 +98,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You can choose between two screens:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jB0-1j-eJm">
-                                <rect key="frame" x="37" y="117" width="338" height="45"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -106,6 +109,9 @@
                                 <state key="normal" title="Log out">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="DoLogOut" id="HEr-Qh-czO"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -223,6 +229,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="HEr-Qh-czO"/>
         <segue reference="bbH-r3-iyH"/>
     </inferredMetricsTieBreakers>
 </document>
