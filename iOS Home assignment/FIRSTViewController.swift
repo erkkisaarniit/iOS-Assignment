@@ -16,12 +16,12 @@ class FIRSTViewController: UIViewController {
     @IBAction func DoTheLogIn(sender: AnyObject) {
         
         
-       // if (username.text == "user" && Password.text == "pass")
-       // {
-       //     performSegueWithIdentifier("GoingToDa2ndScreen", sender: self)
-       // }
+        if (username.text == "user" && Password.text == "pass")
+        {
+            performSegueWithIdentifier("GoingToDa2ndScreen", sender: self)
+        }
         
-        performSegueWithIdentifier("GoingToDa2ndScreen", sender: self)
+        //performSegueWithIdentifier("GoingToDa2ndScreen", sender: self)
         
     }
     
